@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather APP</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>WeatherAPP</h3>
+      <header>
+        <input
+          type="text"
+          autocomplete="off"
+          name="name"
+          class="search-box"
+          placeholder="search for a city"
+        />
+      </header>
+      <section class="country-location">
+        <div class="city"></div>
+        <div class="date"></div>
+      </section>
+      <section class="update">
+        <div class="temp"></div>
+        <div class="weathercond"></div>
+        <div class="hi-lw"></div>
+      </section>
+
+      <div class="error">
+        <p class="show-error"></p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

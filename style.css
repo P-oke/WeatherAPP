@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("./image/weather.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+h3 {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1.7rem;
+}
+header {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px 15px;
+}
+input {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  min-width: 250px;
+  padding: 10px;
+  border-radius: 13px;
+  color: black;
+  font-size: 1.6rem;
+  transition: 0.1s ease-out;
+  border-bottom: 2px solid teal;
+}
+input:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.country-location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px 20px 35px;
+}
+.city {
+  font-weight: 700;
+  font-size: 2.1rem;
+}
+
+.date {
+  font-weight: 300;
+  padding-top: 5px;
+  font-size: 2rem;
+}
+
+.update {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.update .temp {
+  font-weight: 900;
+  text-shadow: 2px 5px rgba(0, 0, 0, 0.4);
+  font-size: 1.9rem;
+}
+.weathercond {
+  font-weight: bold;
+  margin-top: 9px;
+  font-style: italic;
+  text-shadow: 0 4px rgba(0, 0, 0, 0.4);
+  font-size: 1.9rem;
+}
+
+.hi-lw {
+  margin-top: 15px;
+  text-shadow: 0 4px rgba(0, 0, 0, 0.4);
+  font-size: 1.8rem;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+@media (max-width: 400px) {
+  input {
+    margin-left: 5px;
+    font-size: 0.7rem;
+  }
+
+  .city {
+    font-size: 1.1rem;
+  }
+  .date {
+    font-size: 0.9rem;
+  }
+
+  .update {
+    margin-top: 3px;
+  }
+  .update .temp {
+    font-size: 0.83rem;
+  }
+  .hi-lw {
+    font-size: 0.74rem;
+    margin-top: 3px;
+  }
+  .weathercond {
+    margin-top: 2px;
+    font-size: 0.78rem;
+  }
+}
